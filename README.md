@@ -2,7 +2,7 @@
   <img src="www/icons/icon-192.png" width="96" alt="Yaad logo" />
   <h1>یاد · Yaad</h1>
   <p><b>لغت‌نامهٔ آفلاین دهخدا</b></p>
-  <p><a href="https://shahind.github.io/Yaad/"><b>نسخه تحت وب</b></a></p>
+  <p><a href="https://ht696.github.io/Yaad/"><b>نسخه تحت وب</b></a></p>
 
   <p>
   <a href="https://github.com/shahind/Yaad/releases"><img alt="Windows" src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white&style=for-the-badge" width="161"></a>
@@ -19,7 +19,7 @@
 
 | Platform | Link |
 |---|---|
-| 🌐 Web | **[shahind.github.io/Yaad](https://shahind.github.io/Yaad/)** — installable as a PWA; Settings → «بارگیری همهٔ داده‌ها» makes it fully offline |
+| 🌐 Web | **[ht696.github.io/Yaad](https://ht696.github.io/Yaad/)** — installable as a PWA; Settings → «بارگیری همهٔ داده‌ها» makes it fully offline |
 | 🛍️ Bazaar | **[cafebazaar.ir/app/com.shahinsoft.yaad](https://cafebazaar.ir/app/com.shahinsoft.yaad)** |
 | 🤖 Android | **[Yaad-1.1.1.apk](https://github.com/shahind/Yaad/releases/download/v1.1.1/Yaad-1.1.1.apk)** (Android 7+) |
 | 🍏 iOS | **[Yaad-1.1.1-ios-unsigned.ipa](https://github.com/shahind/Yaad/releases/download/v1.1.1/Yaad-1.1.1-ios-unsigned.ipa)** — unsigned; sign with AltStore / Sideloadly |
@@ -54,7 +54,7 @@ Microsoft signs it, so no code-signing certificate is needed.
 - Desktop two-pane layout, phone single-pane layout, keyboard navigation (`/`, arrows, Enter, Esc),
   double-click any word inside a meaning to look it up.
 - **Look-ups from other apps** (e.g. [Doost](https://github.com/shahind/Doost)): the app opens
-  `yaad://search?q=word`, the web version `https://shahind.github.io/Yaad/#/?q=word` (shows the
+  `yaad://search?q=word`, the web version `https://ht696.github.io/Yaad/#/?q=word` (shows the
   search results; `&go=1` would open the exact headword directly).
 - **100% offline**: the dictionary ships inside the app; nothing is ever downloaded at runtime.
   The web version caches what you use (or everything, from Settings) with a service worker.
@@ -150,9 +150,6 @@ YAAD_KEYSTORE_PROPERTIES=/path/to/keystore.properties ./gradlew bundleRelease   
 **iOS IPA (CI)** — publishing a GitHub release runs [`.github/workflows/ios.yml`](.github/workflows/ios.yml),
 which builds an unsigned `.ipa` on macOS and attaches it to the release (it can also be started
 manually from the Actions tab with a tag).
-
-**Web (GitHub Pages)** — `npm run build:data && bash tools/deploy-pages.sh` publishes `www/`
-(including `data/`) to the `gh-pages` branch.
 
 ## Credits & license
 
